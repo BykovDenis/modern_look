@@ -1,0 +1,138 @@
+@import "variables.scss";
+
+@font-face{
+    
+    font-family: "Lato-Light";
+    src: url("../fonts/Lato-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    
+    font-family: "PlayfairDisplay";
+    src: url("../fonts/PlayfairDisplay-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    
+    width: 100%;
+    
+}
+
+.clearfix:after{
+    
+    content: '';
+    clear: both;
+    display: table;    
+    
+}
+
+.header{
+    
+    background: url("../img/bg.jpg") 0 0 no-repeat;         
+    background-position: center;
+    background-size: 1900px 920px;
+    height: 920px;
+    
+    &__layout{
+
+    width: $main-layout-width;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+    position: relative;
+
+    }
+    
+    &__logo{
+        
+        width: 60px;
+        height: 60px;
+        position: absolute;
+            
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #c6c4ba;
+        
+        font: 100 #{$font-size30}/#{$line-height} "Lato-Light" , "Arial", sans-serif;        
+        
+    }
+    
+    a:hover{
+        
+        color: white;
+        
+    }
+    
+    &__menu ul{
+        
+        list-style-type: none;   
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    &__menu li:first-of-type,
+    &__menu li:nth-of-type(2){
+        
+        float: left;
+        margin-right: 55px;
+        
+        
+    }
+    
+    &__menu li:last-of-type,
+    &__menu li:nth-of-type(3){
+        
+        float: right;
+        margin-left: 55px;
+        
+    }
+    
+    
+}
+
+.quote{
+    
+    font: normal #{$font-size54}/#{$line-height} "PlayfairDisplay", Arial, sans-serif;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: color-black;
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;
+        margin: 100px 0;
+        
+        background: 
+            url("../img/quote-open.png") 0 50% no-repeat,
+            url("../img/quote-close.png") 100% 50% no-repeat;    
+        background-size: 142px 107px;    
+        
+        letter-spacing: 0.04em;
+                
+    }
+
+    width: $main-layout-width;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+    position: relative;
+    
+    &--vilet{
+        
+        color: $color-vilet;
+        
+    }
+    
+}
