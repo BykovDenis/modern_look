@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html
+    head
+        meta(charset="utf-8")          
+        title
+        link(href="css/normalize.css" rel="stylesheet")
+        link(href="css/style.css" rel="stylesheet")
+    body
+        header.header
+            div.header__layout
+                nav.header__menu
+                    div.header__logo
+                        a(href="index.html") 
+                            img(src="img/E.png" width="60" height="60" alt="Логотип")
+                            
+                            -  links = [{name: "Portfolio", url:"#"},{name: "About", url: "#"},{name: "Blog", url:"#"},{name:"Contact", url:"#"}]              
+
+                    ul
+                      each link in links        
+                        li  
+                          a(href="#{link.url}") #{link.name}
+                      
+        main
+            div.quote
+                div.quote_layout The best designs are 
+                        span.quote--vilet transparent
+                    
+    

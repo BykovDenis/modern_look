@@ -23,4 +23,14 @@ module.exports = {
             'sass:dev'
         ]
     },
+    
+        styles: {
+        files: [
+            'src/jade/*.jade'
+        ],
+        tasks: [
+            'jade'
+        ]
+    },
+    
 };

@@ -9,7 +9,7 @@ module.exports = {
             expand: true,
             cwd: 'src/scss',
             src: ['*.scss'],
-            dest: 'src/styles',
+            dest: 'src/css',
             ext: '.css'
         }]
     },
