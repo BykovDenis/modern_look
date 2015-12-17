@@ -22,7 +22,22 @@ html
                       
         main
             div.quote
-                div.quote_layout The best designs are 
-                        span.quote--vilet transparent
+                div.quote__layout The best designs are 
+                    span.quote--vilet transparent
+            div.portfolio
+                div.portfolio__layout
+                    h2 Pictures
+                    
+                    - links = [{name: "New",url: "#"},{name: "Man", url: "#"},{name: "Woman", url: "#"},{name: "Other", url: "#"}]
+                    
+                    ul.portfolio__menu
+                        each link in links
+                            li
+                                a(href="#{link.url}") #{link.name}
+                                
+                    div.collage
+                        div.collage__left
+                        div.collage__right
+                    button.collage__btn load more
                     
     

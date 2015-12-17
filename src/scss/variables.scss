@@ -10,14 +10,21 @@ $main-layout-width: 1170px;
 $font-size30: 30px;
 $font-size54: 54px;
 
+$font-size-h2: 94px;
+
 /* Межстрочный интервал */
 
 $line-height: 100px;
 
-$font-family: "Lato-Light";
+$font-family-latolight: "Lato-Light" , Arial, sans-serif; 
+$font-family-playfairdisplay:  "PlayfairDisplay", Arial, sans-serif;
+$font-family-latohairline: "Lato-Hairline",  Arial, sans-serif; 
+
 
 /* цвета */
 
 $color-black: #111111;
 $color-vilet: #8b8194;
+$color-white: #ffffff;
+$color-gray: #666565;
 

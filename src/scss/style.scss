@@ -10,6 +10,14 @@
 
 @font-face{
     
+    font-family: "Lato-Hairline";
+    src: url("../fonts/Lato-Hairline.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    
     font-family: "PlayfairDisplay";
     src: url("../fonts/PlayfairDisplay-Regular.otf");
     font-weight: normal;
@@ -63,7 +71,7 @@ body{
         text-transform: uppercase;
         color: #c6c4ba;
         
-        font: 100 #{$font-size30}/#{$line-height} "Lato-Light" , "Arial", sans-serif;        
+        font: 100 #{$font-size30}/#{$line-height} $font-family_latolight;       
         
     }
     
@@ -103,7 +111,7 @@ body{
 
 .quote{
     
-    font: normal #{$font-size54}/#{$line-height} "PlayfairDisplay", Arial, sans-serif;
+    font: normal #{$font-size54}/#{$line-height} $font-family-playfairdisplay;
     
     text-align: center;
     text-transform: uppercase;
@@ -139,11 +147,59 @@ body{
 
 .portfolio {
     
-    /* dsdsds */
+    background: url("../img/bg_portfolio.jpg") 0 0 repeat;
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;        
+        padding-top: 97px;
+    }
     
     h2{
         
-        text-align: center; 
+        text-align: center;
+        font: normal #{$font-size-h2}/#{$line-height} $font-family-latohairline;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+        
+    }
+    
+    &__menu{
+        
+        text-transform: uppercase;
+        list-style-type: none;
+        text-align: right;
+        
+        li{
+            
+            display: inline-block;
+            vertical-align: top;            
+            margin-right: 21px;
+            
+        }
+        
+        li:last-of-type{
+            
+            margin-right: 0;
+            
+        }
+                
+        a{
+        
+            color: $color-gray;
+            text-decoration: none;
+        
+            :hover{
+            
+                text-decoration: underline;
+                
+            }
+        }
+            
+        
+        
         
     }
     

@@ -1,1 +1,116 @@
-@font-face{font-family:"Lato-Light";src:url("../fonts/Lato-Light.ttf");font-weight:normal;font-style:normal}@font-face{font-family:"PlayfairDisplay";src:url("../fonts/PlayfairDisplay-Regular.otf");font-weight:normal;font-style:normal}body{width:100%}.clearfix:after{content:'';clear:both;display:table}.header{background:url("../img/bg.jpg") 0 0 no-repeat;background-position:center;background-size:1900px 920px;height:920px}.header__layout{width:1170px;margin:0 auto;border-top:1px solid transparent;position:relative}.header__logo{width:60px;height:60px;position:absolute;top:25px;left:50%;transform:translate(-50%)}.header a{text-decoration:none;text-transform:uppercase;color:#c6c4ba;font:100 30px / 100px "Lato-Light","Arial",sans-serif}.header a:hover{color:white}.header__menu ul{list-style-type:none;margin:0;padding:0}.header__menu li:first-of-type,.header__menu li:nth-of-type(2){float:left;margin-right:55px}.header__menu li:last-of-type,.header__menu li:nth-of-type(3){float:right;margin-left:55px}.quote{font:normal 54px / 100px "PlayfairDisplay",Arial,sans-serif;text-align:center;text-transform:uppercase;color:color-black;width:1170px;margin:0 auto;border-top:1px solid transparent;position:relative}.quote__layout{width:1170px;margin:0 auto;margin:100px 0;background:url("../img/quote-open.png") 0 50% no-repeat,url("../img/quote-close.png") 100% 50% no-repeat;background-size:142px 107px;letter-spacing:0.04em}.quote--vilet{color:#8b8194}.portfolio h2{text-align:center}
+@charset "UTF-8";
+/* Ширина страницы */
+/* Размер шрифта */
+/* Межстрочный интервал */
+/* цвета */
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato-Hairline";
+  src: url("../fonts/Lato-Hairline.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  width: 100%; }
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.header {
+  background: url("../img/bg.jpg") 0 0 no-repeat;
+  background-position: center;
+  background-size: 1900px 920px;
+  height: 920px; }
+  .header__layout {
+    width: 1170px;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+    position: relative; }
+  .header__logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%); }
+  .header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c6c4ba;
+    font: 100 30px / 100px "Lato-Light", Arial, sans-serif; }
+  .header a:hover {
+    color: white; }
+  .header__menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .header__menu li:first-of-type,
+  .header__menu li:nth-of-type(2) {
+    float: left;
+    margin-right: 55px; }
+  .header__menu li:last-of-type,
+  .header__menu li:nth-of-type(3) {
+    float: right;
+    margin-left: 55px; }
+
+.quote {
+  font: normal 54px / 100px "PlayfairDisplay", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: color-black;
+  width: 1170px;
+  margin: 0 auto;
+  border-top: 1px solid transparent;
+  position: relative; }
+  .quote__layout {
+    width: 1170px;
+    margin: 0 auto;
+    margin: 100px 0;
+    background: url("../img/quote-open.png") 0 50% no-repeat, url("../img/quote-close.png") 100% 50% no-repeat;
+    background-size: 142px 107px;
+    letter-spacing: 0.04em; }
+  .quote--vilet {
+    color: #8b8194; }
+
+.portfolio {
+  background: url("../img/bg_portfolio.jpg") 0 0 repeat; }
+  .portfolio__layout {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 97px; }
+  .portfolio h2 {
+    text-align: center;
+    font: normal 94px / 100px "Lato-Hairline", Arial, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  .portfolio__menu {
+    text-transform: uppercase;
+    list-style-type: none;
+    text-align: right; }
+    .portfolio__menu li {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 21px; }
+    .portfolio__menu li:last-of-type {
+      margin-right: 0; }
+    .portfolio__menu a {
+      color: #666565;
+      text-decoration: none; }
+      .portfolio__menu a :hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
