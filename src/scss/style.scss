@@ -42,7 +42,7 @@ body{
     
     background: url("../img/bg.jpg") 0 0 no-repeat;         
     background-position: center;
-    background-size: 1900px 920px;
+    background-size: $body-width 920px;
     height: 920px;
     
     &__layout{
@@ -147,7 +147,10 @@ body{
 
 .portfolio {
     
-    background: url("../img/bg_portfolio.jpg") 0 0 repeat;
+    background: #1d1a19 url("../img/bg_portfolio.jpg") 0 0 repeat;
+    padding-bottom: 100px;
+    width: $body-width;
+    margin: 0 auto;
     
     &__layout{
         
@@ -171,6 +174,7 @@ body{
         text-transform: uppercase;
         list-style-type: none;
         text-align: right;
+        margin-left: 0;
         
         li{
             
@@ -197,10 +201,149 @@ body{
                 
             }
         }
-            
+          
+    }
+}
+ 
+.collage{
+    
+    img{
         
+        margin-bottom: 16px;
+        display: block;
+        
+        filter: sepia(0.3) grayscale(0.4);
+        
+    }
+    
+
+    &__left{
+        
+        float:left;
+        
+    }
+
+    
+    &__left-1{
+        
+        float:left;        
+        
+    }
+    
+    &__left-2{
+        
+        width: 774px;        
+        
+    }
+    
+    &__left-10{
+        
+        float: left;
+        width: 279px;
+        margin-right: 18px;        
+        
+    }
+    
+    &__left-10-top{
+        
+        display: inline-block;
+        vertical-align: top;
+        
+        width: 279px;
+        height: 251px;
+        
+        margin-bottom: 18px;
+                
+        background: url('../img/img_portfolio10_top.jpg') 0 -20px no-repeat;
+        background-size: 289px 289px;        
+                
+    }
+    
+    
+    
+    &__left-11-top{
+        
+        display: inline-block;
+        vertical-align: top;
+    /*    background: url(../img/img_portfolio11_top.jpg) -60px 0 no-repeat;        */
+    /*   background-size: 477 430;*/
+        background-color: black;
+        width: 477px;
+        height: 400px;
+        margin-bottom: 15px;
+        
+        overflow: hidden;
+        
+        img{
+            
+            transform: translateX(-70px);
+            
+        }
+    }
+    
+    &__left-11{
+        
+        float: right;
+        width: 477px;
+        
+    }
+    
+    &__right{
+        
+        float:right;
+            
+    }
+    
+    &__right-21{
+        
+        width: 378px;
+        padding: 29px 0;
+        margin-bottom: 18px;
+        
+        text-align: center;
+        text-transform: uppercase;
+        font: 100 38px/83px $font-family-latolight;
+        color: $color-white;
+        background-color: $color-dark-gray;
+        
+    }
+    
+    &__right-22{
+        
+        display: inline-block;
+        vertical-align: bottom;
+            
+        width: 378px;
+        height: 440px;
+        
+        background: url(../img/img_portfolio21.jpg) 0 -60px no-repeat;
+        background-size: 378px 516px;
+        
+        border-radius: 10px;
         
         
     }
+    
+    &__btn{
+        
+        width:100%;
+        font: 100 50px/#{$line-height} $font-family-latolight;
+        text-transform: uppercase;
+        color: $color-gray;
+        background-color: $color-gray-middle;
+        border: none;
+        
+    }
+        
+}
+
+.snowboard{
+    
+ 
+    background: url(../img/img_snowborder.jpg) 0 0 no-repeat;
+    background-size: $body-width 605px;
+    background-position: center;
+    height: 605px;
+    
     
 }

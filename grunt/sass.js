@@ -1,5 +1,7 @@
 module.exports = {
     // Development settings
+    
+ 
     dev: {
         options: {
             outputStyle: 'nested',
@@ -16,7 +18,7 @@ module.exports = {
     // Production settings
     prod: {
         options: {
-            outputStyle: 'compressed',
+            outputStyle: 'compressed',            
             sourceMap: false
         },
         files: [{
@@ -27,4 +29,5 @@ module.exports = {
             ext: '.css'
         }]
     }
+    
 };
