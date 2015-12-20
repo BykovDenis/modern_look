@@ -6,7 +6,7 @@ module.exports =  {
   
     autoprefixer: {
       options: {
-        browsers: ['last 8 versions']
+        browsers: ['last 30 versions']
       },
       files: {
         'src/css/style.css': 'src/css/style.css'

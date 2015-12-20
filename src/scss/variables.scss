@@ -11,22 +11,41 @@ $font-size30: 30px;
 $font-size54: 54px;
 
 $font-size-h2: 94px;
+$font-size-h3: 37px;
+$font-size-h4: 29px;
+
+$font-size-low: 14px;
+$font-size: 16px;
 
 /* Межстрочный интервал */
 
+
+$line-height-text: 24px;
 $line-height: 100px;
+$line-height-h3: 43px;
+$line-height-h4: 38px;
 
 $font-family-latolight: "Lato-Light" , Arial, sans-serif; 
 $font-family-playfairdisplay:  "PlayfairDisplay", Arial, sans-serif;
 $font-family-latohairline: "Lato-Hairline",  Arial, sans-serif; 
+$font-family-latoitalic: "Lato-Italic",  Arial, sans-serif; 
+$font-family-latoliteitalic: "Lato-LightItalic",  Arial, sans-serif; 
+
+
+$font-h2-style: normal #{$font-size-h2}/#{$line-height} $font-family-latohairline;
+$font-h4-style: 100 #{$font-size-h4}/#{$line-height-h4} $font-family-latolight;
 
 
 /* цвета */
 
 $color-black: #111111;
-$color-vilet: #8b8194;
+$color-vilet: #8b8194; 
+$color-vilet1: #2f2637;
+$color-light-vilet: #a397ad;
+$color-middle-vilet: #534461;
 $color-white: #ffffff;
-$color-gray: #666565;
+$color-gray: #666565; 
 $color-dark-gray: #2c2c2c;
 $color-gray-middle: #292a29;
+$color-brown: #c6c4ba;
 

@@ -2,7 +2,7 @@
 html
     head
         meta(charset="utf-8")          
-        title
+        title Modern look
         link(href="css/normalize.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
     body
@@ -26,7 +26,7 @@ html
                     span.quote--vilet transparent
             div.portfolio
                 div.portfolio__layout
-                    h2 Pictures
+                    h2.portfolio__header Pictures
                     
                     - links = [{name: "New",url: "#"},{name: "Man", url: "#"},{name: "Woman", url: "#"},{name: "Other", url: "#"}]
                     
@@ -39,20 +39,102 @@ html
                         div.collage__left.clearfix
                             div.collage__left-1.clearfix
                                 div.collage__left-10                                    
-                                    div.collage__left-10-top(width="279")                                    
+                                    div.collage__left-10-top                                    
                                     img(src="img/img_portfolio10_bottom.jpg" width="279" alt="modern_look")
                                 div.collage__left-11                                    
-                                    div.collage__left-11-top(width="477" height="400")
+                                    div.collage__left-11-top
                                         img(src="img/img_portfolio11_top.jpg" width="620" height="414" alt="modern_look")   
                                     img(src="img/img_portfolio11_bottom.jpg" width="477" alt="modern_look")                                    
                             div.collage__left-2                            
                                 img(src="img/img_portfolio12.jpg" width="774" alt="modern_look")  
                         div.collage__right  
                             img(src="img/img_portfolio20.jpg" width="378" alt="modern_look")  
-                            div.collage__right-21(width="378") Storytelling
+                            div.collage__right-21 Storytelling
                             div.collage__right-22
                     button.collage__btn load more
             div.snowboard
-                    
-    
+            div.about.clearfix
+                div.about__layout
+                    h2.about__header about
+                    div.person__left
+                        div.person__photo
+                            img(src="img/img_person1.jpg" width="654" height="436" alt="modern-look")                        
+                        div.person__content 
+                            h3.person__header hanna shwartz
+                            p This is some fake text to be replaced later on. This is some fake text to be replaced later on. This is some fake text                         to be replaced later on. This is some fake text to be replaced later on. This is some fake text to be replaced later                           on. This is some fake text to be replaced later on.
+                    div.person__right
+                        div.person__photo
+                            img(src="img/img_person2.jpg" width="449" height="451" alt="modern-look")                        
+                        div.person__content
+                            h3.person__header linda hutchinson
+                            p This is some fake text to be replaced later on. This is some fake text to be replaced later on. This is some fake text                         to be replaced later on. This is some fake text to be replaced later on. This is some fake text to be replaced later on.
+            div.personality.clearfix
+                div.personality__layout
+                    p.personality__content 
+                        span.personality__content--black Personality will set your brand apart from competitors and help you connect with a passionate audience.
+            div.blog.clearfix
+                div.blog__layout
+                    h2.blog__header blog
+                    div.blog__cards
+                        div.blog-card
+                            img.blog-card__logo(src="img/img_blog_card1.jpg" width="378" height="200" alt="elegant, creative, and memorable")
+                            h4.blog-card__header elegant, creative, and memorable
+                            p.blog-card__content A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                            p.blog-card__content I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+                            p.blog-card__content I should be incapable of drawing a single stroke at the                           
+                            div.blog-card__footnote
+                                span.blog-card__date AUG 22, 2013
+                                a(href="#").blog-card__link READ MORE  
+                                
+                        div.blog-card
+                            img.blog-card__logo(src="img/img_blog_card2.jpg" width="378" height="200" alt="Pavneet & Raj - dreams do come true")
+                            h4.blog-card__header Pavneet & Raj - dreams do come true
+                            p.blog-card__content When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down.
+
+                            p.blog-card__content I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects.
+                            p.blog-card__content Almighty, who formed us in his own image, and the breath
+                            div.blog-card__footnote
+                                span.blog-card__date AUG 22, 2013
+                                a(href="#").blog-card__link READ MORE                             
+                            
+
+                        div.blog-card
+                            img.blog-card__logo(src="img/img_blog_card3.jpg" width="378" height="200" alt="Matthew and jenny - a journey to a new life")
+                            h4.blog-card__header Matthew and jenny - a journey to a new life
+                            p.blog-card__content A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+                            p.blog-card__content It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.     
+                            div.blog-card__footnote
+                                span.blog-card__date AUG 22, 2013
+                                a(href="#").blog-card__link READ MORE   
+                    div.blog__older-posts older posts
+            div.lighthouse 
+                img(src="img/img_lighthouse.jpg" width="1900" height="1097" alt="Lighthouse")
+
+        footer.main-footer.clearfix            
+            div.contact
+                div.contact__layout.clearfix   
+                    div.contact__header contact
+                    div.contact__column1
+                        h4 let’s conect
+                        p.contact__content Email: info@thisdomain.com Phone: 899-294-1235
+                        p.contact__content Specializing in weddings and family portraits. Includes galleries and contact details.
+                        ul.social  
+
+                            - socials = [{href:"fb.com",class:"icon-fb"},{href:"http://twitter.com",class:"icon-twitter"},{href:"http://linkedin.com",class:"icon-linkedin"},{href:"http://linkedin.com",class:"icon-googleplus"},{href:"https://www.behance.net",class:"icon-behance"},{href:"#",class:"icon-rss"},{href:"https://picasa.google.com",class:"icon-picasa"},{href:"https://www.flickr.com/",class:"icon-flickr"},{href:"https://instagram.com",class:"icon-instagram"},{href:"#",class:"icon-youtube"},{href:"#",class:"icon-vimeo"},{href:"#",class:"icon-tumblr"},{href:"#",class:"icon-pinterest"},{href:"#",class:"icon-drubbble"}]
+
+                            each social in socials
+                                li
+                                    a(href="#{social.href}")
+                                        i.sprite(class="#{social.class}")
+                    div.contact__column2
+                        form(method="get" name="frmMessage").message
+                            textarea.message__text(placeholder="your message")
+                            br
+                            input.message__name(type="text" placeholder="your name") 
+                            br
+                            input.message__email(type="text" placeholder="your_email")
+                            br
+                            input.message__submit(type="submit" value="submit")
+            div.map
+                img(src="img/img_map.jpg" width="1900" height="521" alt="Contact")
     

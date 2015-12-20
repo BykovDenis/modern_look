@@ -40,6 +40,9 @@ body{
 
 .header{
     
+    width: $body-width;
+    margin: 0 auto;
+    
     background: url("../img/bg.jpg") 0 0 no-repeat;         
     background-position: center;
     background-size: $body-width 920px;
@@ -111,17 +114,21 @@ body{
 
 .quote{
     
+    width: $body-width;
+    margin: 0 auto;
+    
     font: normal #{$font-size54}/#{$line-height} $font-family-playfairdisplay;
     
     text-align: center;
     text-transform: uppercase;
-    color: color-black;
+    color: $color-black;    
+    border-top: 1px solid transparent;
+    
     
     &__layout{
         
         width: $main-layout-width;
-        margin: 0 auto;
-        margin: 100px 0;
+        margin: 100px auto;
         
         background: 
             url("../img/quote-open.png") 0 50% no-repeat,
@@ -132,10 +139,6 @@ body{
                 
     }
 
-    width: $main-layout-width;
-    margin: 0 auto;
-    border-top: 1px solid transparent;
-    position: relative;
     
     &--vilet{
         
@@ -152,20 +155,22 @@ body{
     width: $body-width;
     margin: 0 auto;
     
+    
     &__layout{
         
         width: $main-layout-width;
-        margin: 0 auto;        
-        padding-top: 97px;
+        margin: 0 auto;                
+        border-top: 1px solid transparent;    
     }
     
-    h2{
+    &__header{
         
         text-align: center;
-        font: normal #{$font-size-h2}/#{$line-height} $font-family-latohairline;
+        font: $font-h2-style;
         color: $color-white;
         text-transform: uppercase;
-        margin-bottom: 70px;
+        margin: 83px 0;
+        letter-spacing: 0.1em;
         
     }
     
@@ -339,7 +344,8 @@ body{
 
 .snowboard{
     
- 
+    width: $body-width;
+    margin: 0 auto; 
     background: url(../img/img_snowborder.jpg) 0 0 no-repeat;
     background-size: $body-width 605px;
     background-position: center;
@@ -347,3 +353,520 @@ body{
     
     
 }
+
+.about{
+    
+    background-color: $color-gray;
+    width: $body-width;
+    margin: 0 auto;
+    
+    
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;        
+        border-top: 1px solid transparent;    
+        
+    }   
+    
+    &__header{
+        
+        font: $font-h2-style;
+        color: $color-white;
+        text-transform: uppercase; 
+        margin: 83px 0;
+        text-align: center;
+        letter-spacing: 0.1em;        
+        
+    }
+    
+
+}
+
+.person{
+    
+    
+    &__header{
+        
+        font: 100 #{$font-size-h3}/#{$line-height-h3} $font-family-latolight;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-top: 31px;
+        margin-bottom: 80px;
+        padding: 0;
+        letter-spacing: 0.04em;
+        
+    }
+    
+    &__left{
+        
+        float: left;
+        background-color: $color-black;
+        margin-bottom: 100px;
+        
+        img{
+            
+            transform: translateX(-280px);
+            
+        }
+        
+        
+    }
+    
+    &__right{
+        
+        float: right;
+        background-color: $color-black;
+        margin-bottom: 100px;
+        
+        img{
+            
+            transform: translateX(-80px);
+            
+        }
+        
+    }
+    
+    &__content{        
+        
+        width: 257px;
+        float: right;
+        padding: 0 20px;
+        
+        p{
+            
+            color: $color-brown;
+            font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+            
+        }
+        
+    }
+    
+    &__photo{
+        
+        overflow: hidden;
+        float: left;
+        width: 279px;
+        height: 432px;        
+        
+    }
+    
+}
+
+.personality{
+    
+    width: $body-width;
+    
+     &__layout{
+        
+        width: $main-layout-width+45px;
+        margin: 0 auto;        
+        border-top: 1px solid transparent;    
+        
+    }   
+    
+    &__content{
+        
+        font: normal 54px/83px $font-family-playfairdisplay;        
+        text-align: center;
+        color: $color-vilet;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin: 79px 0;
+    }
+    
+    &__content--black{
+        
+        color: $color-black;
+        
+    }
+    
+}
+
+.blog{
+    
+    background: url(../img/bg_block1.jpg) 0 0 repeat;
+    width: $body-width;
+    margin: 0 auto;
+    padding: 0;
+    
+    &__layout{
+
+        width: $main-layout-width;
+        margin: 0 auto;        
+        border-top: 1px solid transparent;        
+        font-size:0;
+    }
+    
+    &__header{
+        
+        text-transform: uppercase;
+        font: $font-h2-style;
+        color: $color-white;
+        text-align: center;
+        margin: 83px 0; 
+        letter-spacing: 0.1em;        
+    }
+    
+    &__older-posts{
+        
+        font: $font-h4-style;
+        color: $color-white;
+        text-transform: uppercase;
+        margin: 96.5px auto;
+        text-align: center;
+    }
+
+   
+}
+
+.blog-card{
+    
+    display: inline-block;
+    vertical-align: top;
+    width: 378px;    
+    padding: 0;
+    margin: 0;        
+    margin-right: 18px;  
+    position:relative;
+    min-height: 680px;
+    
+    &__header{
+        
+        word-wrap: break-word;
+        font:  $font-h4-style;
+        color: $color-white;  
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 0.04em;
+        
+    }
+    
+    &:last-of-type{
+        
+        margin-right: 0;
+        
+    }
+    
+    &__logo{
+        
+        padding-bottom: 24.5px;
+        
+    }
+    
+    &__content{
+        
+        font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+        color: $color-light-vilet;
+        
+    }
+    
+    &__footnote{
+        
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px groove $color-light-vilet;
+        padding: 6px 0;
+        
+    }
+    
+    &__date{
+        
+        font: 100 #{$font-size-low}/#{$line-height-text} $font-family-latolight !important;
+        color: $color-vilet;
+        text-align: left;        
+    }
+    
+    &__link{
+        
+        font: 100 #{$font-size-low}/#{$line-height-text} $font-family-latolight;
+        text-transform: uppercase;
+        color: $color-brown;          
+        text-decoration: none;        
+        float: right;
+    }
+    
+}
+
+.lighthouse{
+    
+    width: $body_width;
+    margin:0 auto;
+    padding: 0;
+    font-size: 0;
+    
+    img{
+        
+        width: 1900px;
+        height: 1097px;
+    }
+    
+}
+
+.contact{
+    
+    width: $body-width;
+    margin: 0 auto;
+    padding: 0;
+    background: #0b0b0b url('../img/bg_contact.jpg') 0 0 repeat;
+    padding-bottom: 295px;
+    
+    
+    &__layout{
+        
+        width: $main-layout-width;
+        margin: 0 auto;
+        border-top: 1px solid transparent;
+        
+    }
+    
+    &__header{
+        
+        text-transform: uppercase;
+        font: $font-h2-style;
+        color: $color-white;
+        text-align: center;
+        margin: 83px 0;  
+        letter-spacing: 0.1em;
+        
+    }
+    
+    &__column1{
+        
+        float: left;
+        width: 576px;
+        
+    }
+    
+    h4{
+        
+        font: $font-h4-style;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-top:0;
+        margin-bottom: 48.5px;
+        
+    }
+    
+    &__content{
+        
+        font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+        color: $color-light-vilet;
+        width: 379px;
+        
+    }
+    
+    &__content:first-of-type{
+        
+        margin:0;
+        margin-bottom:29px;
+        
+    }
+    
+    &__content:last-of-type{
+        
+        margin:0;
+        margin-bottom:74px;
+        
+    }
+    
+    &__column2{
+        
+        float: right;
+        width:378px;
+        margin:0;
+        padding:0;
+        
+        position: relative;
+        
+    }
+    
+}
+
+.social{
+    
+    list-style-type: none;
+    padding: 0;
+    font-size:0;    
+    
+    li{
+        
+        display: inline-block;
+        vertical-align: top;
+        width: 64px;
+        height: 64px;
+        background-color: $color-vilet; 
+        margin-right:18px;
+        margin-bottom: 19px;        
+        
+    }
+    
+    li:nth-of-type(7n){
+        
+        margin-right:0;
+        
+    }
+    
+    li:nth-of-type(8),
+    li:nth-of-type(9),
+    li:nth-of-type(10),
+    li:nth-of-type(11),
+    li:nth-of-type(12),
+    li:nth-of-type(13),
+    li:nth-of-type(14)
+    {
+        
+        margin-bottom:0;
+        
+    }
+    
+    &__icon{
+        
+    }
+    
+}
+
+.message{
+    
+
+    &__text{
+        
+        width: 364px;
+        background-color: $color-vilet1;
+        border: none;
+        padding-top: 14px;
+        height: 184px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        padding-left:14px;
+        
+    }
+    
+    &__name{
+        
+        width: 364px;
+        background-color: $color-vilet1;
+        border: none;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        padding: 14px 0;
+        font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+        color: $color-white;
+        padding-left:14px;
+        
+    }
+    
+    &__email{
+        
+        width: 364px;
+        background-color: $color-vilet1;
+        border: none;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        padding: 14px 0;
+        font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+        color: $color-white;
+        padding-left:14px;
+    }
+    
+    &__submit{
+        
+        width: 378px;
+        background-color: $color-gray;
+        border: none;
+        padding: 14px 0;
+        font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
+        color: $color-white; 
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+}
+
+.map{
+    
+    width: $body-width;
+    margin: 0;
+    padding: 0;
+    
+    img{
+        
+        width: 1900px;
+        height: 521px;
+        
+        filter: grayscale(1);
+        
+    }
+}
+
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);    
+    background-repeat: no-repeat;
+    display: block;
+
+    &.icon-behance {
+        @include stitches-sprite(-5px, -5px, 64px, 64px);
+    }
+
+    &.icon-drubbble {
+        @include stitches-sprite(-79px, -5px, 64px, 64px);
+    }
+
+    &.icon-fb {
+        @include stitches-sprite(-153px, -5px, 64px, 64px);
+    }
+
+    &.icon-flickr {
+        @include stitches-sprite(-5px, -79px, 64px, 64px);
+    }
+
+    &.icon-googleplus {
+        @include stitches-sprite(-79px, -79px, 64px, 64px);
+    }
+
+    &.icon-instagram {
+        @include stitches-sprite(-153px, -79px, 64px, 64px);
+    }
+
+    &.icon-linkedin {
+        @include stitches-sprite(-5px, -153px, 64px, 64px);
+    }
+
+    &.icon-picasa {
+        @include stitches-sprite(-79px, -153px, 64px, 64px);
+    }
+
+    &.icon-pinterest {
+        @include stitches-sprite(-153px, -153px, 64px, 64px);
+    }
+
+    &.icon-rss {
+        @include stitches-sprite(-227px, -5px, 64px, 64px);
+    }
+
+    &.icon-tumblr {
+        @include stitches-sprite(-227px, -79px, 64px, 64px);
+    }
+
+    &.icon-twitter {
+        @include stitches-sprite(-227px, -153px, 64px, 64px);
+    }
+
+    &.icon-vimeo {
+        @include stitches-sprite(-5px, -227px, 64px, 64px);
+    }
+
+    &.icon-youtube {
+        @include stitches-sprite(-79px, -227px, 64px, 64px);
+    }
+}
+
+
