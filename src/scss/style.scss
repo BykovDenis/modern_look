@@ -1,7 +1,8 @@
+@import "normalize.scss";
 @import "variables.scss";
 
 @font-face{
-    
+
     font-family: "Lato-Light";
     src: url("../fonts/Lato-Light.ttf");
     font-weight: normal;
@@ -9,7 +10,7 @@
 }
 
 @font-face{
-    
+
     font-family: "Lato-Hairline";
     src: url("../fonts/Lato-Hairline.ttf");
     font-weight: normal;
@@ -17,7 +18,7 @@
 }
 
 @font-face{
-    
+
     font-family: "PlayfairDisplay";
     src: url("../fonts/PlayfairDisplay-Regular.otf");
     font-weight: normal;
@@ -25,29 +26,29 @@
 }
 
 body{
-    
+
     width: 100%;
-    
+
 }
 
 .clearfix:after{
-    
+
     content: '';
     clear: both;
-    display: table;    
-    
+    display: table;
+
 }
 
 .header{
-    
+
     width: $body-width;
     margin: 0 auto;
-    
-    background: url("../img/bg.jpg") 0 0 no-repeat;         
+
+    background: url("../img/bg.jpg") 0 0 no-repeat;
     background-position: center;
     background-size: $body-width 920px;
     height: 920px;
-    
+
     &__layout{
 
     width: $main-layout-width;
@@ -56,218 +57,218 @@ body{
     position: relative;
 
     }
-    
+
     &__logo{
-        
+
         width: 60px;
         height: 60px;
         position: absolute;
-            
+
         top: 25px;
         left: 50%;
         transform: translate(-50%);
-        
+
     }
 
     a{
         text-decoration: none;
         text-transform: uppercase;
         color: #c6c4ba;
-        
-        font: 100 #{$font-size30}/#{$line-height} $font-family_latolight;       
-        
+
+        font: 100 #{$font-size30}/#{$line-height} $font-family_latolight;
+
     }
-    
+
     a:hover{
-        
+
         color: white;
-        
+
     }
-    
+
     &__menu ul{
-        
-        list-style-type: none;   
+
+        list-style-type: none;
         margin: 0;
         padding: 0;
-        
+
     }
-    
+
     &__menu li:first-of-type,
     &__menu li:nth-of-type(2){
-        
+
         float: left;
         margin-right: 55px;
-        
-        
+
+
     }
-    
+
     &__menu li:last-of-type,
     &__menu li:nth-of-type(3){
-        
+
         float: right;
         margin-left: 55px;
-        
+
     }
-    
-    
+
+
 }
 
 .quote{
-    
+
     width: $body-width;
     margin: 0 auto;
-    
+
     font: normal #{$font-size54}/#{$line-height} $font-family-playfairdisplay;
-    
+
     text-align: center;
     text-transform: uppercase;
-    color: $color-black;    
+    color: $color-black;
     border-top: 1px solid transparent;
-    
-    
+
+
     &__layout{
-        
+
         width: $main-layout-width;
         margin: 100px auto;
-        
-        background: 
+
+        background:
             url("../img/quote-open.png") 0 50% no-repeat,
-            url("../img/quote-close.png") 100% 50% no-repeat;    
-        background-size: 142px 107px;    
-        
+            url("../img/quote-close.png") 100% 50% no-repeat;
+        background-size: 142px 107px;
+
         letter-spacing: 0.04em;
-                
+
     }
 
-    
+
     &--vilet{
-        
+
         color: $color-vilet;
-        
+
     }
-    
+
 }
 
 .portfolio {
-    
+
     background: #1d1a19 url("../img/bg_portfolio.jpg") 0 0 repeat;
     padding-bottom: 100px;
     width: $body-width;
     margin: 0 auto;
-    
-    
+
+
     &__layout{
-        
+
         width: $main-layout-width;
-        margin: 0 auto;                
-        border-top: 1px solid transparent;    
+        margin: 0 auto;
+        border-top: 1px solid transparent;
     }
-    
+
     &__header{
-        
+
         text-align: center;
         font: $font-h2-style;
         color: $color-white;
         text-transform: uppercase;
         margin: 83px 0;
         letter-spacing: 0.1em;
-        
+
     }
-    
+
     &__menu{
-        
+
         text-transform: uppercase;
         list-style-type: none;
         text-align: right;
         margin-left: 0;
-        
+
         li{
-            
+
             display: inline-block;
-            vertical-align: top;            
+            vertical-align: top;
             margin-right: 21px;
-            
+
         }
-        
+
         li:last-of-type{
-            
+
             margin-right: 0;
-            
+
         }
-                
+
         a{
-        
+
             color: $color-gray;
             text-decoration: none;
-        
+
             :hover{
-            
+
                 text-decoration: underline;
-                
+
             }
         }
-          
+
     }
 }
- 
+
 .collage{
-    
+
     img{
-        
+
         margin-bottom: 16px;
         display: block;
-        
+
         filter: sepia(0.3) grayscale(0.4);
-        
+
     }
-    
+
 
     &__left{
-        
+
         float:left;
-        
+
     }
 
-    
+
     &__left-1{
-        
-        float:left;        
-        
+
+        float:left;
+
     }
-    
+
     &__left-2{
-        
-        width: 774px;        
-        
+
+        width: 774px;
+
     }
-    
+
     &__left-10{
-        
+
         float: left;
         width: 279px;
-        margin-right: 18px;        
-        
+        margin-right: 18px;
+
     }
-    
+
     &__left-10-top{
-        
+
         display: inline-block;
         vertical-align: top;
-        
+
         width: 279px;
         height: 251px;
-        
+
         margin-bottom: 18px;
-                
+
         background: url('../img/img_portfolio10_top.jpg') 0 -20px no-repeat;
-        background-size: 289px 289px;        
-                
+        background-size: 289px 289px;
+
     }
-    
-    
-    
+
+
+
     &__left-11-top{
-        
+
         display: inline-block;
         vertical-align: top;
     /*    background: url(../img/img_portfolio11_top.jpg) -60px 0 no-repeat;        */
@@ -276,119 +277,119 @@ body{
         width: 477px;
         height: 400px;
         margin-bottom: 15px;
-        
+
         overflow: hidden;
-        
+
         img{
-            
+
             transform: translateX(-70px);
-            
+
         }
     }
-    
+
     &__left-11{
-        
+
         float: right;
         width: 477px;
-        
+
     }
-    
+
     &__right{
-        
+
         float:right;
-            
+
     }
-    
+
     &__right-21{
-        
+
         width: 378px;
         padding: 29px 0;
         margin-bottom: 18px;
-        
+
         text-align: center;
         text-transform: uppercase;
         font: 100 38px/83px $font-family-latolight;
         color: $color-white;
         background-color: $color-dark-gray;
-        
+
     }
-    
+
     &__right-22{
-        
+
         display: inline-block;
         vertical-align: bottom;
-            
+
         width: 378px;
         height: 440px;
-        
+
         background: url(../img/img_portfolio21.jpg) 0 -60px no-repeat;
         background-size: 378px 516px;
-        
+
         border-radius: 10px;
-        
-        
+
+
     }
-    
+
     &__btn{
-        
+
         width:100%;
         font: 100 50px/#{$line-height} $font-family-latolight;
         text-transform: uppercase;
         color: $color-gray;
         background-color: $color-gray-middle;
         border: none;
-        
+
     }
-        
+
 }
 
 .snowboard{
-    
+
     width: $body-width;
-    margin: 0 auto; 
+    margin: 0 auto;
     background: url(../img/img_snowborder.jpg) 0 0 no-repeat;
     background-size: $body-width 605px;
     background-position: center;
     height: 605px;
-    
-    
+
+
 }
 
 .about{
-    
+
     background-color: $color-gray;
     width: $body-width;
     margin: 0 auto;
-    
-    
-    
+
+
+
     &__layout{
-        
+
         width: $main-layout-width;
-        margin: 0 auto;        
-        border-top: 1px solid transparent;    
-        
-    }   
-    
+        margin: 0 auto;
+        border-top: 1px solid transparent;
+
+    }
+
     &__header{
-        
+
         font: $font-h2-style;
         color: $color-white;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         margin: 83px 0;
         text-align: center;
-        letter-spacing: 0.1em;        
-        
+        letter-spacing: 0.1em;
+
     }
-    
+
 
 }
 
 .person{
-    
-    
+
+
     &__header{
-        
+
         font: 100 #{$font-size-h3}/#{$line-height-h3} $font-family-latolight;
         color: $color-white;
         text-transform: uppercase;
@@ -396,121 +397,121 @@ body{
         margin-bottom: 80px;
         padding: 0;
         letter-spacing: 0.04em;
-        
+
     }
-    
+
     &__left{
-        
+
         float: left;
         background-color: $color-black;
         margin-bottom: 100px;
-        
+
         img{
-            
+
             transform: translateX(-280px);
-            
+
         }
-        
-        
+
+
     }
-    
+
     &__right{
-        
+
         float: right;
         background-color: $color-black;
         margin-bottom: 100px;
-        
+
         img{
-            
+
             transform: translateX(-80px);
-            
+
         }
-        
+
     }
-    
-    &__content{        
-        
+
+    &__content{
+
         width: 257px;
         float: right;
         padding: 0 20px;
-        
+
         p{
-            
+
             color: $color-brown;
             font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
-            
+
         }
-        
+
     }
-    
+
     &__photo{
-        
+
         overflow: hidden;
         float: left;
         width: 279px;
-        height: 432px;        
-        
+        height: 432px;
+
     }
-    
+
 }
 
 .personality{
-    
+
     width: $body-width;
-    
+
      &__layout{
-        
+
         width: $main-layout-width+45px;
-        margin: 0 auto;        
-        border-top: 1px solid transparent;    
-        
-    }   
-    
+        margin: 0 auto;
+        border-top: 1px solid transparent;
+
+    }
+
     &__content{
-        
-        font: normal 54px/83px $font-family-playfairdisplay;        
+
+        font: normal 54px/83px $font-family-playfairdisplay;
         text-align: center;
         color: $color-vilet;
         text-transform: uppercase;
         letter-spacing: 0.04em;
         margin: 79px 0;
     }
-    
+
     &__content--black{
-        
+
         color: $color-black;
-        
+
     }
-    
+
 }
 
 .blog{
-    
+
     background: url(../img/bg_block1.jpg) 0 0 repeat;
     width: $body-width;
     margin: 0 auto;
     padding: 0;
-    
+
     &__layout{
 
         width: $main-layout-width;
-        margin: 0 auto;        
-        border-top: 1px solid transparent;        
+        margin: 0 auto;
+        border-top: 1px solid transparent;
         font-size:0;
     }
-    
+
     &__header{
-        
+
         text-transform: uppercase;
         font: $font-h2-style;
         color: $color-white;
         text-align: center;
-        margin: 83px 0; 
-        letter-spacing: 0.1em;        
+        margin: 83px 0;
+        letter-spacing: 0.1em;
     }
-    
+
     &__older-posts{
-        
+
         font: $font-h4-style;
         color: $color-white;
         text-transform: uppercase;
@@ -518,197 +519,197 @@ body{
         text-align: center;
     }
 
-   
+
 }
 
 .blog-card{
-    
+
     display: inline-block;
     vertical-align: top;
-    width: 378px;    
+    width: 378px;
     padding: 0;
-    margin: 0;        
-    margin-right: 18px;  
+    margin: 0;
+    margin-right: 18px;
     position:relative;
     min-height: 680px;
-    
+
     &__header{
-        
+
         word-wrap: break-word;
         font:  $font-h4-style;
-        color: $color-white;  
+        color: $color-white;
         text-transform: uppercase;
         margin: 0;
         letter-spacing: 0.04em;
-        
+
     }
-    
+
     &:last-of-type{
-        
+
         margin-right: 0;
-        
+
     }
-    
+
     &__logo{
-        
+
         padding-bottom: 24.5px;
-        
+
     }
-    
+
     &__content{
-        
+
         font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
         color: $color-light-vilet;
-        
+
     }
-    
+
     &__footnote{
-        
+
         position: absolute;
         bottom: 0;
         width: 100%;
         border-top: 1px groove $color-light-vilet;
         padding: 6px 0;
-        
+
     }
-    
+
     &__date{
-        
+
         font: 100 #{$font-size-low}/#{$line-height-text} $font-family-latolight !important;
         color: $color-vilet;
-        text-align: left;        
+        text-align: left;
     }
-    
+
     &__link{
-        
+
         font: 100 #{$font-size-low}/#{$line-height-text} $font-family-latolight;
         text-transform: uppercase;
-        color: $color-brown;          
-        text-decoration: none;        
+        color: $color-brown;
+        text-decoration: none;
         float: right;
     }
-    
+
 }
 
 .lighthouse{
-    
+
     width: $body_width;
     margin:0 auto;
     padding: 0;
     font-size: 0;
-    
+
     img{
-        
+
         width: 1900px;
         height: 1097px;
     }
-    
+
 }
 
 .contact{
-    
+
     width: $body-width;
     margin: 0 auto;
     padding: 0;
     background: #0b0b0b url('../img/bg_contact.jpg') 0 0 repeat;
     padding-bottom: 295px;
-    
-    
+
+
     &__layout{
-        
+
         width: $main-layout-width;
         margin: 0 auto;
         border-top: 1px solid transparent;
-        
+
     }
-    
+
     &__header{
-        
+
         text-transform: uppercase;
         font: $font-h2-style;
         color: $color-white;
         text-align: center;
-        margin: 83px 0;  
+        margin: 83px 0;
         letter-spacing: 0.1em;
-        
+
     }
-    
+
     &__column1{
-        
+
         float: left;
         width: 576px;
-        
+
     }
-    
+
     h4{
-        
+
         font: $font-h4-style;
         color: $color-white;
         text-transform: uppercase;
         margin-top:0;
         margin-bottom: 48.5px;
-        
+
     }
-    
+
     &__content{
-        
+
         font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
         color: $color-light-vilet;
         width: 379px;
-        
+
     }
-    
+
     &__content:first-of-type{
-        
+
         margin:0;
         margin-bottom:29px;
-        
+
     }
-    
+
     &__content:last-of-type{
-        
+
         margin:0;
         margin-bottom:74px;
-        
+
     }
-    
+
     &__column2{
-        
+
         float: right;
         width:378px;
         margin:0;
         padding:0;
-        
+
         position: relative;
-        
+
     }
-    
+
 }
 
 .social{
-    
+
     list-style-type: none;
     padding: 0;
-    font-size:0;    
-    
+    font-size:0;
+
     li{
-        
+
         display: inline-block;
         vertical-align: top;
         width: 64px;
         height: 64px;
-        background-color: $color-vilet; 
+        background-color: $color-vilet;
         margin-right:18px;
-        margin-bottom: 19px;        
-        
+        margin-bottom: 19px;
+
     }
-    
+
     li:nth-of-type(7n){
-        
+
         margin-right:0;
-        
+
     }
-    
+
     li:nth-of-type(8),
     li:nth-of-type(9),
     li:nth-of-type(10),
@@ -717,22 +718,22 @@ body{
     li:nth-of-type(13),
     li:nth-of-type(14)
     {
-        
+
         margin-bottom:0;
-        
+
     }
-    
+
     &__icon{
-        
+
     }
-    
+
 }
 
 .message{
-    
+
 
     &__text{
-        
+
         width: 364px;
         background-color: $color-vilet1;
         border: none;
@@ -741,11 +742,11 @@ body{
         margin-bottom: 16px;
         text-transform: uppercase;
         padding-left:14px;
-        
+
     }
-    
+
     &__name{
-        
+
         width: 364px;
         background-color: $color-vilet1;
         border: none;
@@ -755,11 +756,11 @@ body{
         font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
         color: $color-white;
         padding-left:14px;
-        
+
     }
-    
+
     &__email{
-        
+
         width: 364px;
         background-color: $color-vilet1;
         border: none;
@@ -770,34 +771,34 @@ body{
         color: $color-white;
         padding-left:14px;
     }
-    
+
     &__submit{
-        
+
         width: 378px;
         background-color: $color-gray;
         border: none;
         padding: 14px 0;
         font: 100 #{$font-size}/#{$line-height-text} $font-family-latolight;
-        color: $color-white; 
+        color: $color-white;
         text-align: center;
         text-transform: uppercase;
     }
-    
+
 }
 
 .map{
-    
+
     width: $body-width;
     margin: 0;
     padding: 0;
-    
+
     img{
-        
+
         width: 1900px;
         height: 521px;
-        
+
         filter: grayscale(1);
-        
+
     }
 }
 
@@ -808,7 +809,7 @@ body{
 }
 
 .sprite {
-    background-image: url(../img/spritesheet.png);    
+    background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 

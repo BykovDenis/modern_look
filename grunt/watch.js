@@ -23,7 +23,7 @@ module.exports = {
             'sass:dev'
         ]
     },
-    
+
         styles: {
         files: [
             'src/jade/*.jade'
@@ -32,5 +32,5 @@ module.exports = {
             'jade'
         ]
     },
-    
+
 };

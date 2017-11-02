@@ -1,15 +1,12 @@
 module.exports =  {
     // Development settings
- 
-    
-  
-  
+
     autoprefixer: {
       options: {
         browsers: ['last 30 versions']
       },
       files: {
-        'src/css/style.css': 'src/css/style.css'
+        'src/css/style.css': 'dest/css/style.css'
       }
     },
     watch: {
@@ -25,6 +22,6 @@ module.exports =  {
       }
     }
 
-    
+
 
 };

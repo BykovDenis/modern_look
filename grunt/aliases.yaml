@@ -22,3 +22,7 @@ prod:
     - 'concurrent:prodFirst'
     - 'concurrent:prodSecond'
     - img
+browserSync:
+  description: 'browsersync'
+  tasks:
+    - 'concurrent:browserSync'
